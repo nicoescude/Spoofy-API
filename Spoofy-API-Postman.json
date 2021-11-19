@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "339f4779-0dca-4290-a39c-f43413c7dbdb",
+		"name": "Spoofy API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"masterchief\",\r\n    \"fullname\":\"Master Chief\",\r\n    \"premium\": \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/masterchief",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"masterchief"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/ness",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"ness"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Song",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Malianteo 420\",\r\n    \"artist\":\"L-gante\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/song/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"song",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Songs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/song/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"song",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Song",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/song/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"song",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Song",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/song/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"song",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
